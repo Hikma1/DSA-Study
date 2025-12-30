@@ -1,6 +1,8 @@
 '''
 Docstring for Searching.FirstBadVersion
-Given n versions [1, 2, ..., n] and an API isBadVersion(version) which returns whether version is bad.
+Given n versions [1, 2, ..., n] and an API isBadVersion(version)
+ which returns whether version is bad. You need to find the first bad version,
+  which causes all the following ones to be bad.
 
 '''
 # The isBadVersion API is already defined for you.
