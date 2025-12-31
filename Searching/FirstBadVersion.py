@@ -19,10 +19,6 @@ We can use binary search to minimize the number of calls to the API.
 
 class Solution(object):
     def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
         start = 1
         while start<=n:
             mid= (start+n)/2
