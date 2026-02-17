@@ -16,3 +16,40 @@ class Solution(object):
             if nums[j]%2==1 and nums[j+1]%2==0:
                 nums[j], nums[j+1]=nums[j+1],nums[j]
        return nums
+
+
+
+'''Insertion Sort — Concept'''
+'''Start from index 1 (first element is considered sorted)
+
+Pick the current element
+
+Compare it with elements in the sorted part (left side)
+
+Shift elements to the right until you find the correct position
+
+Insert the current element there
+
+Move to the next element
+
+Repeat until the array is sorted'''
+
+class Solution(object):
+    def sortArrayByParity(self, nums):
+        n = len(nums)
+
+        for i in range(n):
+            # Assume current index should hold the next even number
+            even_index = -1
+
+            # Find the next even number in the unsorted part
+            for j in range(i, n):
+                if nums[j] % 2 == 0:
+                    even_index = j
+                    break  # stop at first even number
+
+            # If we found an even number, swap it with current position
+            if even_index != -1:
+                nums[i], nums[even_index] = nums[even_index], nums[i]
+
+        return nums
