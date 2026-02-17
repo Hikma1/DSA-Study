@@ -35,3 +35,16 @@ Insert the element in its correct position
 
 Repeat until the array is sorted
 '''
+
+class Solution(object):
+    def sortArray(self, nums):
+        n = len(nums)
+
+        for i in range(1, n):
+            for j in range(i, 0, -1):
+                if nums[j] < nums[j - 1]:
+                    nums[j], nums[j - 1] = nums[j - 1], nums[j]
+                else:
+                    break
+
+        return nums
