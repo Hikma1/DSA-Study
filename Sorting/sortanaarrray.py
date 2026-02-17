@@ -17,3 +17,21 @@ class Solution(object):
             if nums[j]>nums[j+1]:
                 nums[j], nums[j+1]=nums[j+1],nums[j]
        return nums
+    
+
+
+'''
+nsertion sort idea applied here:
+
+Assume the first element is already sorted
+
+Take the next element
+
+Compare it with elements on the left
+
+Shift larger elements to the right
+
+Insert the element in its correct position
+
+Repeat until the array is sorted
+'''
