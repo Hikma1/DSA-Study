@@ -22,3 +22,23 @@ When to use:
 Learning sorting basics
 Very small arrays
 When simplicity matters more than speed
+
+🔹 Selection Sort
+
+Idea:
+Find the smallest element and put it in the correct position.
+
+How it behaves:
+Select the minimum element from the unsorted part
+Swap it with the first unsorted position
+Reduces the unsorted portion step by step
+
+Characteristics:
+Fewer swaps than Bubble Sort
+Still slow (checks everything)
+Not adaptive (doesn’t care if array is already sorted)
+
+When to use:
+When swap operations are expensive
+Understanding sorting logic clearly
+Simple interview explanations
