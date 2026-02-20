@@ -42,3 +42,23 @@ When to use:
 When swap operations are expensive
 Understanding sorting logic clearly
 Simple interview explanations
+
+🔹 Insertion Sort
+
+Idea:
+Build the sorted array one element at a time, like arranging cards in your hand 🃏
+
+How it behaves:
+Take one element
+Insert it into the correct position in the sorted part (left side)
+Shift elements instead of swapping a lot
+
+Characteristics:
+Very efficient for nearly sorted arrays
+Fewer operations than Bubble & Selection
+Adaptive (fast if array is already sorted)
+
+When to use:
+Small arrays
+Almost sorted data
+Real-world simple scenarios
